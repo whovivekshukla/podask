@@ -3,6 +3,7 @@ from flask import Flask, jsonify, request
 # Import required modules
 import os
 from embedchain import App
+import gunicorn
 
 app = Flask(__name__)
 
