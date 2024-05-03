@@ -48,6 +48,7 @@ def summarize():
     
     # Query the app for summarized takeaways
     summary = bot.query(query)
+    bot.reset()
     
     return jsonify({'summary': summary})
 
